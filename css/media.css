@@ -1,0 +1,188 @@
+@media(max-width: 1240px){
+	.pet{
+		margin: 0 auto;
+	}
+}
+@media(max-width: 1000px){
+	.donate__inner {
+		flex-direction: column;
+		align-items: center;
+	}
+	.donate__descr {
+		max-width: 800px;
+		text-align: center;
+	}
+}
+@media(max-width: 700px){
+	.header__menu {}
+	.header__burger{
+		display: block;
+		position: absolute;
+		top: 25px;
+		right: 0;
+		width: 50px;
+		height: 50px;
+		z-index: 5;
+		margin: 0 15px 0 0;
+		cursor: pointer;
+	}
+	.header__burger::before,
+	.header__burger::after{
+		content: '';
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		position: absolute;
+		transition: .2s;
+	}
+	.header__burger::before{
+		top: 0;
+	}
+	.header__burger::after{
+		bottom: 0;
+	}
+	.header__burger.active::before{
+		top: 23px;
+		transform: rotate(45deg);
+	}
+	.header__burger.active::after{
+		transform: rotate(-45deg);
+		bottom: 23px;
+	}
+	.header__burger span{
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		position: absolute;
+		top: 23px;
+		transition: .4s;
+	}
+	.header__burger.active span{
+		transform: scale(0);
+	}
+	.header__burger.pet_bur::before,
+	.header__burger.pet_bur::after,
+	.header__burger.pet_bur span{
+		background-color: #000;
+	}
+	.header__burger.pet_bur.active::before,
+	.header__burger.pet_bur.active::after,
+	.header__burger.pet_bur.active span{
+		background-color: #fff;
+	}
+	.header__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #2f2624;
+		width: 100%;
+		text-align: center;
+		height: 100vh;
+		transform: translateY(-200%);
+		transition: .4s;
+	}
+	.header__list.active {
+		transform: translateY(0%);
+	}
+	.header__list-link,
+	.header__list-link.pet_a {
+		font-size: 36px;
+		padding: 10px;
+		display: block;
+		margin: 15px 0;
+	}
+	.header__list-item {
+		margin-left: 0px;
+	}
+	.header__list-link:hover{
+		border-bottom: none;
+	}
+	.header__list-link-pets:hover{
+		border-bottom: none
+	}
+
+
+	.footer,
+	.friends,
+	.donate,
+	.pet {
+		padding: 30px 0;
+	}
+	.footer__inner {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__contact {
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+	.about__content {
+		padding: 30px 0;
+		text-align: center;
+		flex-direction: column;
+	}
+	.about__text {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.about__title {
+		margin-bottom: 10px;
+	}
+	.friends__title {
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.friends__item {
+		margin: 0 5px;
+	}
+	.donate__title {
+		margin-bottom: 10px;
+	}
+	.pet__title {
+		margin-bottom: 15px;
+	}
+	.pet__item {
+		margin: 10px 5px;
+	}
+	.header__list-link.pet_a {
+		color: #fff;
+	}
+}
+@media(max-height: 500px){
+	.header{
+		min-height: 140vh;
+	}
+	.header__content {
+		margin-top: 25px;
+	}
+}
+@media(max-width: 480px){
+	.header__title {
+		font-size: 34px;
+		line-height: 36px;
+		margin-bottom: 15px;
+	}
+	.header__descr {
+		margin-bottom: 15px;
+	}
+	.friends__inner .slick-arrow.slick-prev,
+	.friends__inner .slick-arrow.slick-next{
+		width: 20px;
+		height: 25px;
+	}
+	
+	.friends__inner {
+		margin-bottom: 15px;
+		padding: 0 5px;
+	}
+	.donate__number{
+		font-size: 18px;
+	}
+	.help__item {
+		margin: 0 10px 20px;
+	}
+}
